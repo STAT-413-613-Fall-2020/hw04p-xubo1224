@@ -29,3 +29,5 @@ Suggests:
     rmarkdown
 Language: en-US
 VignetteBuilder: knitr
+URL:https://github.com/STAT-413-613-Fall-2020/hw04p-xubo1224
+BugReports:https://github.com/STAT-413-613-Fall-2020/hw04p-xubo1224/issues

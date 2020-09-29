@@ -1,3 +1,12 @@
+#' Title
+#'
+#' @param x
+#' @param n
+#'
+#' @return
+#' @export
+#'
+#' @examples
 myseq_n <- function(x, n) {
   # error reminder
   if (n <= 0) {

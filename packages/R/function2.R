@@ -1,4 +1,20 @@
+#' Title
+#'
+#' @param x
+#'
+#' @return
+#' @export
+#'
+#' @examples
 myseq_graph <- function(x){
+  # Error reminder
+  if (is.data.frame(x) != "TRUE"){
+    stop("x should be data frame")
+  }
+  else if (ncol(x) != 4){
+    stop("x must have 4 values")
+  }
+  # create function
   num <- vector(mode = "double", length = nrow(x))
   for (i in seq_along(num)){
     r <- x[i,]
@@ -15,4 +31,3 @@ myseq_graph <- function(x){
     ggplot2::ylab("output")+
     ggplot2::ggtitle("My Sequence")
 }
-
